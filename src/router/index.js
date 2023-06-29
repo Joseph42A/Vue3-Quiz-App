@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Quizes from "../views/Quizes.vue";
 import Home from "../views/Home.vue";
 import QuizDetail from "../views/QuizDetail.vue";
+import PiniaStores from "../views/PiniaStores.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,6 +21,11 @@ const router = createRouter({
       path: "/quiz/:id",
       name: "quiz",
       component: QuizDetail,
+    },
+    {
+      path: "/pinia-store",
+      name: "pinia",
+      component: PiniaStores,
     },
   ],
 });

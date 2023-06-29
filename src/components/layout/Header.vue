@@ -8,6 +8,9 @@ import { RouterLink } from "vue-router";
       <ul>
         <li><RouterLink to="/" active-class>Home</RouterLink></li>
         <li><RouterLink to="/quizes" active-class>Quizes</RouterLink></li>
+        <li>
+          <RouterLink to="/pinia-store" active-class>Pinia Stores</RouterLink>
+        </li>
       </ul>
     </nav>
   </header>
